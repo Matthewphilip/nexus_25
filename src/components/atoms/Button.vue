@@ -76,8 +76,6 @@ const onClick = () => {
 // const shades = generateShades(colour.value);
 // const darken_background = shades[700];
 // const muted_background = shades[100];
-
-// const has_hover = hover_colour.value ? hover_colour.value : darken_background;
 </script>
 
 <style lang="scss">

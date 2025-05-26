@@ -1,8 +1,8 @@
 <template>
-  <div class="value-card">
+  <section class="value-card" aria-label="value-your-car-form">
     <div class="value-card__container">
       <div class="value-card__container__value-your-car">
-        <div class="value-card__container__value-your-car__title">
+        <header class="value-card__container__value-your-car__title">
           <Typeography
             string="Value your car"
             component="h2"
@@ -12,14 +12,14 @@
           />
           <Typeography
             :string="advertText"
-            component="h2"
+            component="p"
             text="value-car-advert"
             weight="400"
             colour="#000000"
           />
-        </div>
+        </header>
 
-        <div
+        <form
           v-if="screenWidth > 760"
           class="value-card__container__value-your-car__value-inputs"
         >
@@ -43,7 +43,7 @@
               @click="handleSubmit"
             />
           </div>
-        </div>
+        </form>
       </div>
 
       <Button
@@ -68,7 +68,7 @@
         @click="handleSubmit"
       />
     </div>
-  </div>
+  </section>
 </template>
 <script setup lang="ts">
 import { ref, computed } from "vue";
@@ -149,7 +149,6 @@ const headingWeight = computed(() => {
       }
 
       &__value-inputs {
-        // margin: 20px 0;
         display: flex;
         flex-direction: column;
         justify-content: center;

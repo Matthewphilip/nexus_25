@@ -3,7 +3,6 @@
     <ResultsHeader class="results-template__header" />
     <ResultsBody class="results-template__body" />
     <ResultsNavigation class="results-template__footer" />
-    <!-- <ClientList v-if="client_data" :client_data="client_data" />  -->
   </div>
 </template>
         
@@ -39,15 +38,14 @@ onMounted(() => {
   }
 
   &__body {
-    flex: 1 1 auto; // Takes remaining space
+    flex: 1 1 auto;
     overflow-y: auto;
-    // width: 100%;
 
-    -ms-overflow-style: none; // IE and Edge
-    scrollbar-width: none; // Firefox
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 
     &::-webkit-scrollbar {
-      display: none; // Chrome, Safari, Opera
+      display: none;
     }
   }
 }

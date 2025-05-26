@@ -72,11 +72,11 @@ const valueCarIndex = computed(() => {
   let index;
 
   if (screenWidth.value < 760) {
-    return 2; // mobile, insert at 5th card (index 4)
+    return 4; // mobile, insert at 5th card (index 4)
   } else if (screenWidth.value < 1039) {
     return 3; // tablet, 4th card (index 3)
   } else {
-    return 2; // desktop, 5th card (index 4)
+    return 4; // desktop, 5th card (index 4)
   }
 
   // if the filtered data length is less than or equal to index, fallback to 1
