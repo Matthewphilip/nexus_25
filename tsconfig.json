@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "lib": ["es2015", "dom"],
+        "module": "esnext",
+        "allowSyntheticDefaultImports": true,
+        "types": ["vue"],
+        "strict": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@/*": ["./src/*"],
+            "@pages/*": ["./src/components/pages"],
+            "@templates/*": ["./src/components/templates"],
+            "@organisms/*": ["./src/components/organisms"],
+            "@molecules/*": ["./src/components/molecules"],
+            "@atoms/*": ["./src/components/atoms"],
+            "@stores/*": ["./src/stores"]
+        }
+    },
+    "include": ["./src/**/*.vue", "src/**/*.vue", "src/**/*"],
+    "exclude": []
+}
